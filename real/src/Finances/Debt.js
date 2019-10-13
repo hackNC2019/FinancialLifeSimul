@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import './FinancialPanel.css'
 
 
 class Debt extends React.Component{
@@ -17,39 +18,17 @@ class Debt extends React.Component{
         }
     }
     render(){
-        const classes = {
-            card: {
-                maxWidth: 345,
-            },
-            media: {
-                height: 500
-            }
-          };
         return(
-        <Card style={classes.card}>
-        <CardActionArea>
-          <CardMedia
-            image="https://img.icons8.com/color/480/000000/debt.png"
-            title="Debt"
-            style= {classes.media}
-          />
+        <Card className= "finstatus">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h6" component="h2">
               Debt
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Your current amount of Debt: ${this.state.value}
+              ${this.state.value}
             </Typography>
           </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Do something
-          </Button>
-          <Button size="small" color="primary">
-            Do something Else
-          </Button>
-        </CardActions>
+        
       </Card>
         );
     }
