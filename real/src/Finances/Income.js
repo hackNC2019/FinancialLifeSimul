@@ -8,8 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-
-class Savings extends React.Component{
+class Income extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -29,16 +28,16 @@ class Savings extends React.Component{
         <Card style={classes.card}>
         <CardActionArea>
           <CardMedia
-            image="https://img.icons8.com/color/480/000000/stack-of-money.png"
-            title="Savings"
+            image="https://img.icons8.com/plasticine/400/000000/economic-improvement.png"
+            title="Income"
             style= {classes.media}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Savings
+              Income
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Your current amount of Savings: ${this.state.value}
+              Your current amount of Income: ${this.state.value}
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -54,4 +53,4 @@ class Savings extends React.Component{
         );
     }
 }
-export default Savings;
+export default Income;
