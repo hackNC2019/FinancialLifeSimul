@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import College from './Events/College'
+import College from './Events/College';
+import FinPanel from './Finances/FinancialPanel';
 
 class Main extends React.Component{
     constructor(props) {
@@ -25,7 +26,11 @@ class Main extends React.Component{
         }
         else{
         return (
-            <College />
+            <React.Fragment>
+                <FinPanel />
+                <College />
+                
+            </ React.Fragment>
         )
         }
     
