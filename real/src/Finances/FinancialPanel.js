@@ -1,4 +1,5 @@
 import React from 'react';
+import Savings from './Savings'
 
 class FinPanel extends React.Component{
     constructor(props){
@@ -13,13 +14,14 @@ class FinPanel extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div>
-                    <ul id='financesList'>
+                <Savings />
+                {/* <div id='finances-div'>
+                    <ul id='finances-list'>
                         <li>Savings: {this.state.savings}</li>
                         <li>Income: {this.state.income}</li>
                         <li>Debts: {this.state.debts}</li>
                     </ul>
-                </div>
+                </div> */}
             </React.Fragment>
         );
     }
