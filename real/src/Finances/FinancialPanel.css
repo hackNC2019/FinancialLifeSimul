@@ -1,1 +1,14 @@
-#fin-panel{display:flex; flex-direction:row;}
+#fin-panel{
+    display:flex; 
+    flex-direction:row;
+    height: 80px;
+    margin-bottom: 30px;
+}
+/* 
+.finstatus {
+    background-color: green;
+}
+
+#statuscontent{
+    padding: -5px;
+} */
