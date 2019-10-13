@@ -30,7 +30,7 @@ class College extends React.Component{
         else{
             return(
                 <div>
-                    <h1>Choose a College</h1>
+                    <h1 class='event-titles'>Choose a College</h1>
                     <Button onClick={() =>this.handleClick("uni")}>4 Year University</Button>
                     <Button onClick={() =>this.handleClick("cc")}>Community College</Button>
                     <Button onClick={() =>this.handleClick("trade")}>Trade School</Button>
